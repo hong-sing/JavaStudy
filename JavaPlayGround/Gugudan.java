@@ -47,7 +47,7 @@ public class Gugudan {
 //        result = 4 * 9;
 //        System.out.println(result);
 
-        System.out.println("구구단 중 출력할 단은? : 5");
+        System.out.println("구구단 중 출력할 단은? : ");
         Scanner scanner = new Scanner(System.in);  //값을 입력받기 위해
         int number = scanner.nextInt();
         System.out.println(number * 1);
