@@ -3,18 +3,66 @@ package JavaPlayGround;
 import java.util.Scanner;
 
 public class Gugudan {
+    public static int[] caculate(int times) {
+        int[] result = new int[9];
+        for (int i=0; i < result.length; i++) {
+            result[i] = times * (i + 1);
+        }
+        return result;
+    }
+
+    public static void print(int[] result) {
+        for (int i=0; i < result.length; i++) {
+            System.out.println(result[i]);
+        }
+    }
     public static void main(String[] args) {
-        // 6단
-        int i = 1;
-        while(i < 10) {
-            System.out.println(6 * i);
-            i = i + 1; // i++
+        for (int i=2; i < 10; i++) {
+            int[] result = caculate(i);
+            print(result);
         }
 
+//        int[] result = caculate(2);
+//        print(result);
+//
+//        int[] times3 = caculate(3);
+//        print(times3);
+//
+//        int[] times4 = caculate(4);
+//        print(times4);
+//
+//        int[] times5 = caculate(5);
+//        print(times5);
+
+        // 8, 9단
+//        System.out.println("구구단 중 출력할 단은? : ");
+//        Scanner scanner = new Scanner(System.in);
+//        int number = scanner.nextInt();
+//        System.out.println("사용자가 입력한 값 : " + number);
+//
+//        if (number < 2) {
+//            System.out.println("값을 잘못 입력했습니다.");
+//        } else if (number > 9) {
+//            System.out.println("값을 잘못 입력했습니다.");
+//        } else {
+//            for (int i = 1; i < 10; i++) {
+//                System.out.println(number * i);
+//            }
+//        }
+
+
+
+        // 6단
+//        int i = 1;
+//        while(i < 10) {
+//            System.out.println(6 * i);
+//            i = i + 1; // i++
+//        }
+
         // 7단
-        for (int j = 1; j < 10; j++) {
-            System.out.println(7 * j);
-        }
+//        for (int j = 1; j < 10; j++) {
+//            System.out.println(7 * j);
+//        }
 
         // 2단
 //        System.out.println("2단");
@@ -74,5 +122,47 @@ public class Gugudan {
 //        System.out.println(number * 8);
 //        System.out.println(number * 9);
 
+        ///////////////////////////////////////////////
+
+//        int[] result = new int[9];
+//        for (int i=0; i < result.length; i++) {
+//            result[i] = 2 * (i + 1);
+//        }
+//
+//        for (int i=0; i < result.length; i++) {
+//            System.out.println(result[i]);
+//        }
+//
+//        result = new int[9];
+//        for (int i=0; i < result.length; i++) {
+//            result[i] = 3 * (i + 1);
+//        }
+//
+//        for (int i=0; i < result.length; i++) {
+//            System.out.println(result[i]);
+//        }
+//
+//
+//        int[] times4 = new int[9];
+//        for (int i=0; i < times4.length; i++) {
+//            times4[i] = 3 * (i + 1);
+//        }
+//
+//        for (int i=0; i < times4.length; i++) {
+//            System.out.println(times4[i]);
+//        }
+
+        //해보기 : 이중 반복문을 사용하여 중복 제거
+
+//        int[] result = new int[9];
+//
+//        for (int i=2; i<10; i++) {
+//            for (int j=0; j<result.length; j++) {
+//                result[j] = i * (j + 1);
+//                System.out.println(result[j]);
+//            }
+//        }
+
     }
 }
+
